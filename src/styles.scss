@@ -106,6 +106,9 @@
         flex: 1;
         background-color: #3e3c61;
         position: relative;
+        @include mobile {
+          width: 35%;
+        }
   
         .navbar {
           display: flex;
@@ -133,6 +136,7 @@
               width: 24px;
               border-radius: 50%;
               object-fit: cover;
+              
             }
   
             button {
