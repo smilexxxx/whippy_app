@@ -72,7 +72,7 @@ const Register = () => {
           <button>Sign up</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>You do have an account? <Link to="/register">Login</Link></p>
+        <p>You do have an account? <Link to="/login">Login</Link></p>
       </div>
     </div>
   );
