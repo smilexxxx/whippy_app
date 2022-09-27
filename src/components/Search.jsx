@@ -10,6 +10,7 @@ import {
   serverTimestamp,
   getDoc,
 } from "firebase/firestore";
+import { FaSearch} from 'react-icons/fa'
 import { db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
 const Search = () => {
@@ -82,10 +83,11 @@ const Search = () => {
         <input
           type="text"
           placeholder="Find a user"
-          onKeyDown={handleKey}
+          onKeyDown={handleKey} 
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <FaSearch />
       </div>
       {err && <span>User not found!</span>}
       {user && (
